@@ -12,6 +12,9 @@ import Proj4
 @testable import Proj4Swift
 
 class ProjectionTests: XCTestCase {
+    static let WGS840 = "+proj=longlat +ellps=WGS84 +no_defs"
+    // web mercator http://spatialreference.org/ref/sr-org/7483/
+    static let WebMercator = "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
     func testInitError() {
         do {
             let _ = try Projection(config: "bad config")
@@ -25,9 +28,8 @@ class ProjectionTests: XCTestCase {
     }
     
     func testTransform() {
-        // web mercator http://spatialreference.org/ref/sr-org/7483/
-        let projWGS840 = try? Projection(config: "+proj=longlat +ellps=WGS84 +no_defs")
-        let projMerc = try? Projection(config: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs")
+        let projWGS840 = try? Projection(config: ProjectionTests.WGS840)
+        let projMerc = try? Projection(config: ProjectionTests.WebMercator)
         XCTAssertNotNil(projWGS840)
         XCTAssertNotNil(projMerc)
         
@@ -46,8 +48,8 @@ class ProjectionTests: XCTestCase {
     }
     
     func testTransformError() {
-        let projWGS840 = try? Projection(config: "+proj=longlat +ellps=WGS84 +no_defs")
-        let projMerc = try? Projection(config: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs")
+        let projWGS840 = try? Projection(config: ProjectionTests.WGS840)
+        let projMerc = try? Projection(config: ProjectionTests.WebMercator)
         let points = [
             // the point should be in radian, but we pass degree instead
             Point3D(x: -122.407679, y: 37.781520, z: 0)
