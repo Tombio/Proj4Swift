@@ -1,0 +1,4 @@
+module Proj4 [system][extern_c] {
+    header "/Users/victorlin/workspace/open_source/Proj4Swift/lib/proj4/src/proj_api.h"
+    export *
+}
