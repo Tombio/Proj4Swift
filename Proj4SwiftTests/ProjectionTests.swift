@@ -7,19 +7,40 @@
 //
 
 import XCTest
+
+import Proj4
 @testable import Proj4Swift
 
 class ProjectionTests: XCTestCase {
-    func testProjectionWGS84() {
+    func testTransform() {
         // web mercator http://spatialreference.org/ref/sr-org/7483/
-        let proj = try! Projection(config: "+proj=longlat +ellps=WGS84 +no_defs")
+        let projWGS840 = try? Projection(config: "+proj=longlat +ellps=WGS84 +no_defs")
+        let projMerc = try? Projection(config: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs")
+        XCTAssertNotNil(projWGS840)
+        XCTAssertNotNil(projMerc)
+        
+        // for more testing points, we can reference to
+        // https://github.com/proj4js/proj4js/blob/master/test/testData.js
+        
+        let points = [
+            Point3D(x: -122.407679 * DEG_TO_RAD, y: 37.781520 * DEG_TO_RAD, z: 0)
+        ]
+        let resultPoints = try? projWGS840!.transform(points, toProjection: projMerc!)
+        XCTAssertNotNil(resultPoints)
+        
+        XCTAssertEqualWithAccuracy(resultPoints!.first!.x, -13626360.495466487, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(resultPoints!.first!.y, 4548607.725511416, accuracy: 0.01)
+        
     }
     
-    func testProjectionError() {
+    func testInitError() {
         do {
-            try Projection(config: "bad")
+            let _ = try Projection(config: "bad config")
+        } catch Projection.Error.InitFailed(let code, let message) {
+            XCTAssertEqual(code, 2)
+            XCTAssertEqual(message, "no arguments in initialization list")
         } catch {
-            print("!!!", (error as! Projection.Error))
+            XCTFail("Wrong error \(error)")
         }
     }
     

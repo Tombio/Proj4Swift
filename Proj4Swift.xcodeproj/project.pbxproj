@@ -188,6 +188,7 @@
 		D8B00B1B1C956ADA005663B1 /* rtodms.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B008E91C955213005663B1 /* rtodms.c */; };
 		D8B00B1C1C956ADA005663B1 /* vector1.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B008EB1C955213005663B1 /* vector1.c */; };
 		D8B00B1D1C956B95005663B1 /* Proj4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B009B71C95653E005663B1 /* Proj4.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D8B00B1F1C95EC5D005663B1 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00B1E1C95EC5D005663B1 /* Point3D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -395,6 +396,7 @@
 		D8B009BF1C95657E005663B1 /* Proj4.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Proj4.xcconfig; sourceTree = "<group>"; };
 		D8B009C01C9566E1005663B1 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D8B009D11C95691D005663B1 /* proj_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proj_config.h; sourceTree = "<group>"; };
+		D8B00B1E1C95EC5D005663B1 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +451,7 @@
 			children = (
 				D8B008271C955183005663B1 /* Proj4Swift.h */,
 				D8B009AD1C9553AD005663B1 /* Projection.swift */,
+				D8B00B1E1C95EC5D005663B1 /* Point3D.swift */,
 				D8B008291C955183005663B1 /* Info.plist */,
 			);
 			path = Proj4Swift;
@@ -822,6 +825,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B009AE1C9553AD005663B1 /* Projection.swift in Sources */,
+				D8B00B1F1C95EC5D005663B1 /* Point3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
