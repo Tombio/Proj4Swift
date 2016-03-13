@@ -43,9 +43,9 @@ public final class Projection {
         var xValues = points.map { $0.x }
         var yValues = points.map { $0.y }
         var zValues = points.map { $0.z }
-        let retval = pj_transform(self.proj, toProjection.proj, points.count, 1, &xValues, &yValues, nil)
+        let retval = pj_transform(self.proj, toProjection.proj, points.count, 1, &xValues, &yValues, &zValues)
         if retval != 0 {
-            throw Error.InitFailed(code: Int(retval), message: Projection.errorMessage(retval))
+            throw Error.TransformFailed(code: Int(retval), message: Projection.errorMessage(retval))
         }
         return xValues.enumerate().map { index, x in
             return Point3D(x: x, y: yValues[index], z: zValues[index])
