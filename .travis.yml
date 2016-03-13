@@ -4,7 +4,8 @@ before_install:
   - brew install xctool
 
 script:   
-  > xcodebuild -project "Proj4Swift.xcodeproj" \
+  - >
+    xcodebuild -project "Proj4Swift.xcodeproj" \
       -destination "OS=9.3,name=iPhone 6s" \
       -sdk "iphonesimulator9.3" \
       -scheme "Proj4Swift" \
