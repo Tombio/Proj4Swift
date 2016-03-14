@@ -14,7 +14,7 @@ import Proj4Lib
  A Projection object provides coordinates transformation from one production to another
  */
 public final class Projection {
-    enum Error: ErrorType {
+    public enum Error: ErrorType {
         /// Initialization failed
         case InitFailed(code: Int, message: String)
         /// Transform failed
@@ -23,11 +23,11 @@ public final class Projection {
     
     /// The General Parameters for proj4 configuration
     /// - See Also: [General Parameters](http://proj.maptools.org/gen_parms.html)
-    let parameters: String
+    public let parameters: String
     
     internal let proj: projPJ
     
-    init(config: String) throws {
+    public init(config: String) throws {
         self.parameters = config
         proj = pj_init_plus(parameters)
         if proj == nil {
@@ -39,7 +39,7 @@ public final class Projection {
         pj_free(proj)
     }
     
-    func transform(points: [Point3D], toProjection: Projection) throws -> [Point3D] {
+    public func transform(points: [Point3D], toProjection: Projection) throws -> [Point3D] {
         var xValues = points.map { $0.x }
         var yValues = points.map { $0.y }
         var zValues = points.map { $0.z }
