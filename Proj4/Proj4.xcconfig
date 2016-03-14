@@ -1,9 +1,0 @@
-//
-//  Proj4.xcconfig
-//  Proj4Swift
-//
-//  Created by Fang-Pen Lin on 3/13/16.
-//  Copyright © 2016 Fang-Pen Lin. All rights reserved.
-//
-
-MODULEMAP_FILE = $(SRCROOT)/Proj4/module.modulemap

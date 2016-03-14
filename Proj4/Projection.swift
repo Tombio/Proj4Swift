@@ -1,6 +1,6 @@
 //
 //  Projection.swift
-//  Proj4Swift
+//  Proj4
 //
 //  Created by Fang-Pen Lin on 3/12/16.
 //  Copyright © 2016 Fang-Pen Lin. All rights reserved.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-import Proj4
+import Proj4Lib
 
 /**
-    A Projection object provides coordinates transformation from one production to another
-*/
+ A Projection object provides coordinates transformation from one production to another
+ */
 public final class Projection {
     enum Error: ErrorType {
         /// Initialization failed
