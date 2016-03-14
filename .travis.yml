@@ -5,9 +5,9 @@ before_install:
 
 script:   
   - >
-    xcodebuild -project "Proj4Swift.xcodeproj" \
+    xcodebuild -project "Proj4.xcodeproj" \
       -destination "OS=9.2,name=iPhone 6s" \
       -sdk "iphonesimulator9.2" \
-      -scheme "Proj4Swift" \
+      -scheme "Proj4" \
       -configuration Debug \
       test | xcpretty -c;

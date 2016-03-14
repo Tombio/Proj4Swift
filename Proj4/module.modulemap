@@ -1,6 +1,0 @@
-module Proj4 [extern_c] {
-    // XXX: hard wired path really sucks, but I cannot find a way to make it to be relative to the project folder
-    // it always say not found
-    header "/Users/victorlin/workspace/open_source/Proj4Swift/lib/proj4/src/proj_api.h"
-    export *
-}
