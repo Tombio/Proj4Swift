@@ -14,6 +14,11 @@ import Proj4Lib
     A Projection object provides coordinates transformation from one production to another
  */
 public final class Projection {
+    /// Double number for multiplying to convert from degree to radian
+    public static let degToRad = DEG_TO_RAD
+    /// Double number for multiplying to convert from radian to degree
+    public static let radToDeg = RAD_TO_DEG
+    
     public enum Error: ErrorType {
         /// Initialization failed
         case InitFailed(code: Int, message: String)

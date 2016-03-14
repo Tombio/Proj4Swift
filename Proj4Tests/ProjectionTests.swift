@@ -9,7 +9,6 @@
 import XCTest
 
 import Proj4
-import Proj4Lib
 
 class ProjectionTests: XCTestCase {
     static let WGS840 = "+proj=longlat +ellps=WGS84 +no_defs"
@@ -37,7 +36,7 @@ class ProjectionTests: XCTestCase {
         // https://github.com/proj4js/proj4js/blob/master/test/testData.js
         
         let points = [
-            Point3D(x: -122.407679 * DEG_TO_RAD, y: 37.781520 * DEG_TO_RAD, z: 0)
+            Point3D(x: -122.407679 * Projection.degToRad, y: 37.781520 * Projection.degToRad, z: 0)
         ]
         let resultPoints = try? projWGS840!.transform(points, toProjection: projMerc!)
         XCTAssertNotNil(resultPoints)
