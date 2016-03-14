@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D8B00BEE1C9649E0005663B1 /* Proj4.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00BED1C9649E0005663B1 /* Proj4.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8B00BF51C9649E0005663B1 /* Proj4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B00BEA1C9649E0005663B1 /* Proj4.framework */; };
-		D8B00BFA1C9649E0005663B1 /* Proj4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00BF91C9649E0005663B1 /* Proj4Tests.swift */; };
 		D8B00C241C964A78005663B1 /* emess.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00C1A1C964A78005663B1 /* emess.h */; };
 		D8B00C251C964A78005663B1 /* geocent.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00C1B1C964A78005663B1 /* geocent.h */; };
 		D8B00C261C964A78005663B1 /* geod_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00C1C1C964A78005663B1 /* geod_interface.h */; };
@@ -216,7 +215,6 @@
 		D8B00BED1C9649E0005663B1 /* Proj4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proj4.h; sourceTree = "<group>"; };
 		D8B00BEF1C9649E0005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8B00BF41C9649E0005663B1 /* Proj4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proj4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B00BF91C9649E0005663B1 /* Proj4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proj4Tests.swift; sourceTree = "<group>"; };
 		D8B00BFB1C9649E0005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8B00C1A1C964A78005663B1 /* emess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = emess.h; path = lib/proj4/src/emess.h; sourceTree = SOURCE_ROOT; };
 		D8B00C1B1C964A78005663B1 /* geocent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geocent.h; path = lib/proj4/src/geocent.h; sourceTree = SOURCE_ROOT; };
@@ -478,7 +476,6 @@
 		D8B00BF81C9649E0005663B1 /* Proj4Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D8B00BF91C9649E0005663B1 /* Proj4Tests.swift */,
 				D8B00DAB1C964FFC005663B1 /* ProjectionTests.swift */,
 				D8B00BFB1C9649E0005663B1 /* Info.plist */,
 			);
@@ -1054,7 +1051,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B00DAC1C964FFC005663B1 /* ProjectionTests.swift in Sources */,
-				D8B00BFA1C9649E0005663B1 /* Proj4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

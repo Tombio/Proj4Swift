@@ -6,12 +6,12 @@
 //  Copyright © 2016 Fang-Pen Lin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 import Proj4Lib
 
 /**
- A Projection object provides coordinates transformation from one production to another
+    A Projection object provides coordinates transformation from one production to another
  */
 public final class Projection {
     public enum Error: ErrorType {
@@ -27,8 +27,8 @@ public final class Projection {
     
     internal let proj: projPJ
     
-    public init(config: String) throws {
-        self.parameters = config
+    public init(parameters: String) throws {
+        self.parameters = parameters
         proj = pj_init_plus(parameters)
         if proj == nil {
             throw Error.InitFailed(code: Int(errno), message: Projection.errorMessage())
