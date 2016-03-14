@@ -187,7 +187,6 @@
 		D8B00D871C964B2E005663B1 /* proj_config.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00D861C964B2E005663B1 /* proj_config.h */; };
 		D8B00D891C964B58005663B1 /* Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00D881C964B58005663B1 /* Projection.swift */; };
 		D8B00D8B1C964B82005663B1 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00D8A1C964B81005663B1 /* Point3D.swift */; };
-		D8B00D961C964F09005663B1 /* Proj4Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00D951C964F09005663B1 /* Proj4Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8B00D9D1C964F09005663B1 /* Proj4Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B00D931C964F09005663B1 /* Proj4Lib.framework */; };
 		D8B00DA21C964F09005663B1 /* Proj4LibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00DA11C964F09005663B1 /* Proj4LibTests.swift */; };
 		D8B00DAC1C964FFC005663B1 /* ProjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00DAB1C964FFC005663B1 /* ProjectionTests.swift */; };
@@ -395,7 +394,6 @@
 		D8B00D881C964B58005663B1 /* Projection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projection.swift; sourceTree = "<group>"; };
 		D8B00D8A1C964B81005663B1 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
 		D8B00D931C964F09005663B1 /* Proj4Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Proj4Lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B00D951C964F09005663B1 /* Proj4Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proj4Lib.h; sourceTree = "<group>"; };
 		D8B00D971C964F09005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8B00D9C1C964F09005663B1 /* Proj4LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proj4LibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B00DA11C964F09005663B1 /* Proj4LibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proj4LibTests.swift; sourceTree = "<group>"; };
@@ -675,7 +673,6 @@
 		D8B00D941C964F09005663B1 /* Proj4Lib */ = {
 			isa = PBXGroup;
 			children = (
-				D8B00D951C964F09005663B1 /* Proj4Lib.h */,
 				D8B00DAA1C964F22005663B1 /* module.modulemap */,
 				D8B00D971C964F09005663B1 /* Info.plist */,
 			);
@@ -717,7 +714,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8B00D961C964F09005663B1 /* Proj4Lib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1322,6 +1318,7 @@
 				D8B00DA61C964F09005663B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8B00DA71C964F09005663B1 /* Build configuration list for PBXNativeTarget "Proj4LibTests" */ = {
 			isa = XCConfigurationList;
@@ -1330,6 +1327,7 @@
 				D8B00DA91C964F09005663B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
