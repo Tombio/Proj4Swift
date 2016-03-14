@@ -17,7 +17,7 @@ class ProjectionTests: XCTestCase {
     static let WebMercator = "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
     func testInitError() {
         do {
-            let _ = try Projection(config: "bad config")
+            let _ = try Projection(parameters: "bad parameters")
             XCTFail("Should throw error")
         } catch Projection.Error.InitFailed(let code, let message) {
             XCTAssertEqual(code, 2)
@@ -28,8 +28,8 @@ class ProjectionTests: XCTestCase {
     }
     
     func testTransform() {
-        let projWGS840 = try? Projection(config: ProjectionTests.WGS840)
-        let projMerc = try? Projection(config: ProjectionTests.WebMercator)
+        let projWGS840 = try? Projection(parameters: ProjectionTests.WGS840)
+        let projMerc = try? Projection(parameters: ProjectionTests.WebMercator)
         XCTAssertNotNil(projWGS840)
         XCTAssertNotNil(projMerc)
         
@@ -48,8 +48,8 @@ class ProjectionTests: XCTestCase {
     }
     
     func testTransformError() {
-        let projWGS840 = try? Projection(config: ProjectionTests.WGS840)
-        let projMerc = try? Projection(config: ProjectionTests.WebMercator)
+        let projWGS840 = try? Projection(parameters: ProjectionTests.WGS840)
+        let projMerc = try? Projection(parameters: ProjectionTests.WebMercator)
         let points = [
             // the point should be in radian, but we pass degree instead
             Point3D(x: -122.407679, y: 37.781520, z: 0)
