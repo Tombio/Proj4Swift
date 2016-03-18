@@ -187,8 +187,6 @@
 		D8B00D871C964B2E005663B1 /* proj_config.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00D861C964B2E005663B1 /* proj_config.h */; };
 		D8B00D891C964B58005663B1 /* Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00D881C964B58005663B1 /* Projection.swift */; };
 		D8B00D8B1C964B82005663B1 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00D8A1C964B81005663B1 /* Point3D.swift */; };
-		D8B00D9D1C964F09005663B1 /* Proj4Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B00D931C964F09005663B1 /* Proj4Lib.framework */; };
-		D8B00DA21C964F09005663B1 /* Proj4LibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00DA11C964F09005663B1 /* Proj4LibTests.swift */; };
 		D8B00DAC1C964FFC005663B1 /* ProjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00DAB1C964FFC005663B1 /* ProjectionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -200,16 +198,10 @@
 			remoteGlobalIDString = D8B00BE91C9649E0005663B1;
 			remoteInfo = Proj4;
 		};
-		D8B00D9E1C964F09005663B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8B00BE11C9649E0005663B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8B00D921C964F09005663B1;
-			remoteInfo = Proj4Lib;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8A41FFD1C9BEA1000419791 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D8B00BEA1C9649E0005663B1 /* Proj4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Proj4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B00BED1C9649E0005663B1 /* Proj4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proj4.h; sourceTree = "<group>"; };
 		D8B00BEF1C9649E0005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -393,12 +385,7 @@
 		D8B00D861C964B2E005663B1 /* proj_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proj_config.h; sourceTree = "<group>"; };
 		D8B00D881C964B58005663B1 /* Projection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projection.swift; sourceTree = "<group>"; };
 		D8B00D8A1C964B81005663B1 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
-		D8B00D931C964F09005663B1 /* Proj4Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Proj4Lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B00D971C964F09005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8B00D9C1C964F09005663B1 /* Proj4LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proj4LibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B00DA11C964F09005663B1 /* Proj4LibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proj4LibTests.swift; sourceTree = "<group>"; };
-		D8B00DA31C964F09005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8B00DAA1C964F22005663B1 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D8B00DAB1C964FFC005663B1 /* ProjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -418,31 +405,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8B00D8F1C964F09005663B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8B00D991C964F09005663B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8B00D9D1C964F09005663B1 /* Proj4Lib.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8A41FFC1C9BE9DF00419791 /* Proj4Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D8A41FFD1C9BEA1000419791 /* module.modulemap */,
+			);
+			name = Proj4Lib;
+			path = ../Proj4Lib;
+			sourceTree = "<group>";
+		};
 		D8B00BE01C9649E0005663B1 = {
 			isa = PBXGroup;
 			children = (
 				D8B00BEC1C9649E0005663B1 /* Proj4 */,
 				D8B00D941C964F09005663B1 /* Proj4Lib */,
 				D8B00BF81C9649E0005663B1 /* Proj4Tests */,
-				D8B00DA01C964F09005663B1 /* Proj4LibTests */,
 				D8B00BEB1C9649E0005663B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -452,8 +432,6 @@
 			children = (
 				D8B00BEA1C9649E0005663B1 /* Proj4.framework */,
 				D8B00BF41C9649E0005663B1 /* Proj4Tests.xctest */,
-				D8B00D931C964F09005663B1 /* Proj4Lib.framework */,
-				D8B00D9C1C964F09005663B1 /* Proj4LibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,6 +439,7 @@
 		D8B00BEC1C9649E0005663B1 /* Proj4 */ = {
 			isa = PBXGroup;
 			children = (
+				D8A41FFC1C9BE9DF00419791 /* Proj4Lib */,
 				D8B00C051C964A15005663B1 /* headers */,
 				D8B00C041C964A10005663B1 /* src */,
 				D8B00BED1C9649E0005663B1 /* Proj4.h */,
@@ -673,19 +652,9 @@
 		D8B00D941C964F09005663B1 /* Proj4Lib */ = {
 			isa = PBXGroup;
 			children = (
-				D8B00DAA1C964F22005663B1 /* module.modulemap */,
 				D8B00D971C964F09005663B1 /* Info.plist */,
 			);
 			path = Proj4Lib;
-			sourceTree = "<group>";
-		};
-		D8B00DA01C964F09005663B1 /* Proj4LibTests */ = {
-			isa = PBXGroup;
-			children = (
-				D8B00DA11C964F09005663B1 /* Proj4LibTests.swift */,
-				D8B00DA31C964F09005663B1 /* Info.plist */,
-			);
-			path = Proj4LibTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,13 +676,6 @@
 				D8B00C281C964A78005663B1 /* nad_list.h in Headers */,
 				D8B00C291C964A78005663B1 /* org_proj4_PJ.h in Headers */,
 				D8B00BEE1C9649E0005663B1 /* Proj4.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8B00D901C964F09005663B1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,42 +718,6 @@
 			productReference = D8B00BF41C9649E0005663B1 /* Proj4Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D8B00D921C964F09005663B1 /* Proj4Lib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8B00DA41C964F09005663B1 /* Build configuration list for PBXNativeTarget "Proj4Lib" */;
-			buildPhases = (
-				D8B00D8E1C964F09005663B1 /* Sources */,
-				D8B00D8F1C964F09005663B1 /* Frameworks */,
-				D8B00D901C964F09005663B1 /* Headers */,
-				D8B00D911C964F09005663B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Proj4Lib;
-			productName = Proj4Lib;
-			productReference = D8B00D931C964F09005663B1 /* Proj4Lib.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D8B00D9B1C964F09005663B1 /* Proj4LibTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8B00DA71C964F09005663B1 /* Build configuration list for PBXNativeTarget "Proj4LibTests" */;
-			buildPhases = (
-				D8B00D981C964F09005663B1 /* Sources */,
-				D8B00D991C964F09005663B1 /* Frameworks */,
-				D8B00D9A1C964F09005663B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8B00D9F1C964F09005663B1 /* PBXTargetDependency */,
-			);
-			name = Proj4LibTests;
-			productName = Proj4LibTests;
-			productReference = D8B00D9C1C964F09005663B1 /* Proj4LibTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -806,12 +732,6 @@
 						CreatedOnToolsVersion = 7.3;
 					};
 					D8B00BF31C9649E0005663B1 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					D8B00D921C964F09005663B1 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					D8B00D9B1C964F09005663B1 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -830,8 +750,6 @@
 			targets = (
 				D8B00BE91C9649E0005663B1 /* Proj4 */,
 				D8B00BF31C9649E0005663B1 /* Proj4Tests */,
-				D8B00D921C964F09005663B1 /* Proj4Lib */,
-				D8B00D9B1C964F09005663B1 /* Proj4LibTests */,
 			);
 		};
 /* End PBXProject section */
@@ -845,20 +763,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D8B00BF21C9649E0005663B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8B00D911C964F09005663B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8B00D9A1C964F09005663B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1050,21 +954,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8B00D8E1C964F09005663B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8B00D981C964F09005663B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8B00DA21C964F09005663B1 /* Proj4LibTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1072,11 +961,6 @@
 			isa = PBXTargetDependency;
 			target = D8B00BE91C9649E0005663B1 /* Proj4 */;
 			targetProxy = D8B00BF61C9649E0005663B1 /* PBXContainerItemProxy */;
-		};
-		D8B00D9F1C964F09005663B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8B00D921C964F09005663B1 /* Proj4Lib */;
-			targetProxy = D8B00D9E1C964F09005663B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1229,58 +1113,6 @@
 			};
 			name = Release;
 		};
-		D8B00DA51C964F09005663B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Proj4Lib/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.victorlin.Proj4Lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D8B00DA61C964F09005663B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Proj4Lib/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.victorlin.Proj4Lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D8B00DA81C964F09005663B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Proj4LibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.victorlin.Proj4LibTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D8B00DA91C964F09005663B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Proj4LibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.victorlin.Proj4LibTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1307,24 +1139,6 @@
 			buildConfigurations = (
 				D8B00C021C9649E0005663B1 /* Debug */,
 				D8B00C031C9649E0005663B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8B00DA41C964F09005663B1 /* Build configuration list for PBXNativeTarget "Proj4Lib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8B00DA51C964F09005663B1 /* Debug */,
-				D8B00DA61C964F09005663B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8B00DA71C964F09005663B1 /* Build configuration list for PBXNativeTarget "Proj4LibTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8B00DA81C964F09005663B1 /* Debug */,
-				D8B00DA91C964F09005663B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

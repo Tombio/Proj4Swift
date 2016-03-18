@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "python -c &apos;import re, os; fo = open(&quot;%s//Proj4Lib/module.modulemap&quot; % os.environ[&quot;SRCROOT&quot;], &quot;r+t&quot;); new = re.sub(&quot;header \&quot;(.+)\&quot;&quot;, &quot;header \&quot;%s/lib/proj4/src/proj_api.h\&quot;&quot; % os.environ[&quot;SRCROOT&quot;], fo.read()); fo.truncate(0); fo.write(new)&apos;">
+               scriptText = "python -c &apos;import re, os; fo = open(&quot;%s/Proj4Lib/module.modulemap&quot; % os.environ[&quot;SRCROOT&quot;], &quot;r+t&quot;); new = re.sub(&quot;header \&quot;(.+)\&quot;&quot;, &quot;header \&quot;%s/lib/proj4/src/proj_api.h\&quot;&quot; % os.environ[&quot;SRCROOT&quot;], fo.read()); fo.truncate(0); fo.write(new)&apos;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
