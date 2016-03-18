@@ -30,7 +30,7 @@ public final class Projection {
     /// - See Also: [General Parameters](http://proj.maptools.org/gen_parms.html)
     public let parameters: String
     
-    internal let proj: projPJ
+    private let proj: projPJ
     
     public init(parameters: String) throws {
         self.parameters = parameters
