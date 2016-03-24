@@ -30,7 +30,7 @@ public final class Projection {
     /// - See Also: [General Parameters](http://proj.maptools.org/gen_parms.html)
     public let parameters: String
     
-    private let proj: projPJ
+    private let proj: UnsafeMutablePointer<Void>
     
     public init(parameters: String) throws {
         self.parameters = parameters
@@ -48,7 +48,7 @@ public final class Projection {
         var xValues = points.map { $0.x }
         var yValues = points.map { $0.y }
         var zValues = points.map { $0.z }
-        let retval = pj_transform(self.proj, toProjection.proj, points.count, 1, &xValues, &yValues, &zValues)
+        let retval = pj_transform(proj, toProjection.proj, points.count, 1, &xValues, &yValues, &zValues)
         if retval != 0 {
             throw Error.TransformFailed(code: Int(retval), message: Projection.errorMessage(retval))
         }
