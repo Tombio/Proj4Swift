@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "python &quot;$SRCROOT/Proj4Lib/gen-modulemap.py&quot;">
+               scriptText = "python &quot;$SRCROOT/Proj4/gen-modulemap.py&quot;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
