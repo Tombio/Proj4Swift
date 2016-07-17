@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D82D5F011D3B050000C62F04 /* gen-modulemap.py in Resources */ = {isa = PBXBuildFile; fileRef = D82D5F001D3B050000C62F04 /* gen-modulemap.py */; };
+		D82D5F061D3B0EF200C62F04 /* gen-modulemap.py in Resources */ = {isa = PBXBuildFile; fileRef = D82D5F051D3B0EF200C62F04 /* gen-modulemap.py */; };
+		D82D5F081D3B0EFC00C62F04 /* proj_config.h in Headers */ = {isa = PBXBuildFile; fileRef = D82D5F071D3B0EFC00C62F04 /* proj_config.h */; };
+		D839E19D1D3B15C600708757 /* PJ_comill.c in Sources */ = {isa = PBXBuildFile; fileRef = D839E19C1D3B15C600708757 /* PJ_comill.c */; };
+		D839E19F1D3B15FA00708757 /* pj_generic_selftest.c in Sources */ = {isa = PBXBuildFile; fileRef = D839E19E1D3B15FA00708757 /* pj_generic_selftest.c */; };
+		D839E1A11D3B163400708757 /* PJ_natearth2.c in Sources */ = {isa = PBXBuildFile; fileRef = D839E1A01D3B163400708757 /* PJ_natearth2.c */; };
+		D839E1A31D3B166300708757 /* PJ_patterson.c in Sources */ = {isa = PBXBuildFile; fileRef = D839E1A21D3B166300708757 /* PJ_patterson.c */; };
 		D8B00BEE1C9649E0005663B1 /* Proj4.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00BED1C9649E0005663B1 /* Proj4.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8B00BF51C9649E0005663B1 /* Proj4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B00BEA1C9649E0005663B1 /* Proj4.framework */; };
 		D8B00C241C964A78005663B1 /* emess.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00C1A1C964A78005663B1 /* emess.h */; };
@@ -185,7 +190,6 @@
 		D8B00D811C964A83005663B1 /* proj_rouss.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B00CD51C964A83005663B1 /* proj_rouss.c */; };
 		D8B00D831C964A83005663B1 /* rtodms.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B00CD71C964A83005663B1 /* rtodms.c */; };
 		D8B00D851C964A83005663B1 /* vector1.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B00CD91C964A83005663B1 /* vector1.c */; };
-		D8B00D871C964B2E005663B1 /* proj_config.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B00D861C964B2E005663B1 /* proj_config.h */; };
 		D8B00D891C964B58005663B1 /* Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00D881C964B58005663B1 /* Projection.swift */; };
 		D8B00D8B1C964B82005663B1 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00D8A1C964B81005663B1 /* Point3D.swift */; };
 		D8B00DAC1C964FFC005663B1 /* ProjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00DAB1C964FFC005663B1 /* ProjectionTests.swift */; };
@@ -202,8 +206,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D82D5F001D3B050000C62F04 /* gen-modulemap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "gen-modulemap.py"; sourceTree = "<group>"; };
-		D82D5F021D3B05D900C62F04 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		D82D5F041D3B0E0900C62F04 /* Proj4.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = Proj4.modulemap; sourceTree = "<group>"; };
+		D82D5F051D3B0EF200C62F04 /* gen-modulemap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "gen-modulemap.py"; sourceTree = "<group>"; };
+		D82D5F071D3B0EFC00C62F04 /* proj_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proj_config.h; sourceTree = "<group>"; };
+		D839E19C1D3B15C600708757 /* PJ_comill.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PJ_comill.c; path = lib/proj4/src/PJ_comill.c; sourceTree = SOURCE_ROOT; };
+		D839E19E1D3B15FA00708757 /* pj_generic_selftest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pj_generic_selftest.c; path = lib/proj4/src/pj_generic_selftest.c; sourceTree = SOURCE_ROOT; };
+		D839E1A01D3B163400708757 /* PJ_natearth2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PJ_natearth2.c; path = lib/proj4/src/PJ_natearth2.c; sourceTree = SOURCE_ROOT; };
+		D839E1A21D3B166300708757 /* PJ_patterson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PJ_patterson.c; path = lib/proj4/src/PJ_patterson.c; sourceTree = SOURCE_ROOT; };
 		D8B00BEA1C9649E0005663B1 /* Proj4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Proj4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B00BED1C9649E0005663B1 /* Proj4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proj4.h; sourceTree = "<group>"; };
 		D8B00BEF1C9649E0005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -387,7 +396,6 @@
 		D8B00D861C964B2E005663B1 /* proj_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proj_config.h; sourceTree = "<group>"; };
 		D8B00D881C964B58005663B1 /* Projection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projection.swift; sourceTree = "<group>"; };
 		D8B00D8A1C964B81005663B1 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
-		D8B00D971C964F09005663B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8B00DAB1C964FFC005663B1 /* ProjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -410,20 +418,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D8A41FFC1C9BE9DF00419791 /* Proj4Lib */ = {
-			isa = PBXGroup;
-			children = (
-				D82D5F021D3B05D900C62F04 /* module.modulemap */,
-			);
-			name = Proj4Lib;
-			path = ../Proj4Lib;
-			sourceTree = "<group>";
-		};
 		D8B00BE01C9649E0005663B1 = {
 			isa = PBXGroup;
 			children = (
 				D8B00BEC1C9649E0005663B1 /* Proj4 */,
-				D8B00D941C964F09005663B1 /* Proj4Lib */,
 				D8B00BF81C9649E0005663B1 /* Proj4Tests */,
 				D8B00BEB1C9649E0005663B1 /* Products */,
 			);
@@ -441,12 +439,14 @@
 		D8B00BEC1C9649E0005663B1 /* Proj4 */ = {
 			isa = PBXGroup;
 			children = (
-				D8A41FFC1C9BE9DF00419791 /* Proj4Lib */,
 				D8B00C051C964A15005663B1 /* headers */,
 				D8B00C041C964A10005663B1 /* src */,
+				D82D5F071D3B0EFC00C62F04 /* proj_config.h */,
 				D8B00BED1C9649E0005663B1 /* Proj4.h */,
 				D8B00D881C964B58005663B1 /* Projection.swift */,
 				D8B00D8A1C964B81005663B1 /* Point3D.swift */,
+				D82D5F041D3B0E0900C62F04 /* Proj4.modulemap */,
+				D82D5F051D3B0EF200C62F04 /* gen-modulemap.py */,
 				D8B00BEF1C9649E0005663B1 /* Info.plist */,
 			);
 			path = Proj4;
@@ -495,6 +495,7 @@
 				D8B00C4F1C964A83005663B1 /* PJ_bipc.c */,
 				D8B00C501C964A83005663B1 /* PJ_boggs.c */,
 				D8B00C511C964A83005663B1 /* PJ_bonne.c */,
+				D839E19C1D3B15C600708757 /* PJ_comill.c */,
 				D8B00C521C964A83005663B1 /* PJ_calcofi.c */,
 				D8B00C531C964A83005663B1 /* PJ_cass.c */,
 				D8B00C541C964A83005663B1 /* PJ_cc.c */,
@@ -523,6 +524,7 @@
 				D8B00C6B1C964A83005663B1 /* PJ_fouc_s.c */,
 				D8B00C6C1C964A83005663B1 /* pj_fwd.c */,
 				D8B00C6D1C964A83005663B1 /* pj_fwd3d.c */,
+				D839E19E1D3B15FA00708757 /* pj_generic_selftest.c */,
 				D8B00C6E1C964A83005663B1 /* PJ_gall.c */,
 				D8B00C6F1C964A83005663B1 /* pj_gauss.c */,
 				D8B00C701C964A83005663B1 /* pj_gc_reader.c */,
@@ -571,6 +573,7 @@
 				D8B00C9B1C964A83005663B1 /* PJ_moll.c */,
 				D8B00C9C1C964A83005663B1 /* pj_msfn.c */,
 				D8B00C9D1C964A83005663B1 /* pj_mutex.c */,
+				D839E1A01D3B163400708757 /* PJ_natearth2.c */,
 				D8B00C9E1C964A83005663B1 /* PJ_natearth.c */,
 				D8B00C9F1C964A83005663B1 /* PJ_nell_h.c */,
 				D8B00CA01C964A83005663B1 /* PJ_nell.c */,
@@ -583,6 +586,7 @@
 				D8B00CA71C964A83005663B1 /* PJ_omerc.c */,
 				D8B00CA81C964A83005663B1 /* pj_open_lib.c */,
 				D8B00CA91C964A83005663B1 /* PJ_ortho.c */,
+				D839E1A21D3B166300708757 /* PJ_patterson.c */,
 				D8B00CAA1C964A83005663B1 /* pj_param.c */,
 				D8B00CAB1C964A83005663B1 /* pj_phi2.c */,
 				D8B00CAC1C964A83005663B1 /* PJ_poly.c */,
@@ -651,15 +655,6 @@
 			name = headers;
 			sourceTree = "<group>";
 		};
-		D8B00D941C964F09005663B1 /* Proj4Lib */ = {
-			isa = PBXGroup;
-			children = (
-				D8B00D971C964F09005663B1 /* Info.plist */,
-				D82D5F001D3B050000C62F04 /* gen-modulemap.py */,
-			);
-			path = Proj4Lib;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -670,7 +665,6 @@
 				D8B00C241C964A78005663B1 /* emess.h in Headers */,
 				D8B00C261C964A78005663B1 /* geod_interface.h in Headers */,
 				D8B00C2C1C964A78005663B1 /* proj_api.h in Headers */,
-				D8B00D871C964B2E005663B1 /* proj_config.h in Headers */,
 				D8B00C2D1C964A78005663B1 /* projects.h in Headers */,
 				D8B00C2A1C964A78005663B1 /* org_proj4_Projections.h in Headers */,
 				D8B00C271C964A78005663B1 /* geodesic.h in Headers */,
@@ -679,6 +673,7 @@
 				D8B00C281C964A78005663B1 /* nad_list.h in Headers */,
 				D8B00C291C964A78005663B1 /* org_proj4_PJ.h in Headers */,
 				D8B00BEE1C9649E0005663B1 /* Proj4.h in Headers */,
+				D82D5F081D3B0EFC00C62F04 /* proj_config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,7 +757,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D82D5F011D3B050000C62F04 /* gen-modulemap.py in Resources */,
+				D82D5F061D3B0EF200C62F04 /* gen-modulemap.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,6 +850,7 @@
 				D8B00CF41C964A83005663B1 /* PJ_airy.c in Sources */,
 				D8B00D3C1C964A83005663B1 /* PJ_loxim.c in Sources */,
 				D8B00D231C964A83005663B1 /* pj_gridcatalog.c in Sources */,
+				D839E1A11D3B163400708757 /* PJ_natearth2.c in Sources */,
 				D8B00D721C964A83005663B1 /* pj_units.c in Sources */,
 				D8B00D161C964A83005663B1 /* pj_fileapi.c in Sources */,
 				D8B00D141C964A83005663B1 /* pj_factors.c in Sources */,
@@ -865,6 +861,7 @@
 				D8B00D781C964A83005663B1 /* PJ_vandg4.c in Sources */,
 				D8B00CF61C964A83005663B1 /* pj_apply_gridshift.c in Sources */,
 				D8B00D0A1C964A83005663B1 /* PJ_eck1.c in Sources */,
+				D839E19D1D3B15C600708757 /* PJ_comill.c in Sources */,
 				D8B00CE41C964A83005663B1 /* geod_interface.c in Sources */,
 				D8B00D491C964A83005663B1 /* pj_mutex.c in Sources */,
 				D8B00D8B1C964B82005663B1 /* Point3D.swift in Sources */,
@@ -881,6 +878,7 @@
 				D8B00D2F1C964A83005663B1 /* pj_inv3d.c in Sources */,
 				D8B00D6E1C964A83005663B1 /* PJ_tmerc.c in Sources */,
 				D8B00D101C964A83005663B1 /* pj_ellps.c in Sources */,
+				D839E19F1D3B15FA00708757 /* pj_generic_selftest.c in Sources */,
 				D8B00D5F1C964A83005663B1 /* PJ_qsc.c in Sources */,
 				D8B00D0C1C964A83005663B1 /* PJ_eck3.c in Sources */,
 				D8B00D2E1C964A83005663B1 /* pj_inv.c in Sources */,
@@ -911,6 +909,7 @@
 				D8B00D071C964A83005663B1 /* pj_datums.c in Sources */,
 				D8B00D671C964A83005663B1 /* PJ_stere.c in Sources */,
 				D8B00D621C964A83005663B1 /* PJ_robin.c in Sources */,
+				D839E1A31D3B166300708757 /* PJ_patterson.c in Sources */,
 				D8B00D4D1C964A83005663B1 /* PJ_nocol.c in Sources */,
 				D8B00CE91C964A83005663B1 /* hypot.c in Sources */,
 				D8B00CF81C964A83005663B1 /* PJ_august.c in Sources */,
@@ -1008,6 +1007,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = "$(SRCROOT)/Proj4/Proj4.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1051,6 +1051,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = "$(SRCROOT)/Proj4/Proj4.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
